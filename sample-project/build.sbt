@@ -15,7 +15,8 @@ lazy val root = (project in file("."))
       // "com.h2database"            % "h2"                     % "1.4.196" % "test",
       "org.scalatest"             %% "scalatest"             % "3.0.3" % "test"
     ),
-    unmanagedSourceDirectories in Compile += baseDirectory.value / "target/reladomo"
+    unmanagedSourceDirectories in Compile += baseDirectory.value / "target/reladomo",
+    obfuscateLiterals in obfuscate := true
     // reladomoScalaApiFutureType := "twitter",
     // scalafmtOnCompile := true,
     // compile in Compile := (compile in Compile).dependsOn(reladomoGen in Compile).value
