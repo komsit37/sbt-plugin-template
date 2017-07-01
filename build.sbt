@@ -12,7 +12,7 @@ lazy val baseSettings = Seq(
   pomExtra := _pomExtra
 )
 
-lazy val sbtPluginExample = (project in file("sbt-plugin-example"))
+lazy val `sbt-plugin-example` = (project in file("sbt-plugin-example"))
   .settings(baseSettings)
   .settings(
     name := "sbt-plugin-example",
@@ -27,7 +27,7 @@ lazy val sbtPluginExample = (project in file("sbt-plugin-example"))
     )
   )
 
-lazy val gitRepositoryName = "reladomo-scala"
+lazy val gitRepositoryName = "sbt-plugin-seed"
 lazy val _scalaOptions     = Seq("-unchecked", "-deprecation", "-feature")
 lazy val _pomExtra =
   <url>https://github.com/folio-sec/${gitRepositoryName}</url>
